@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Message 1`] = `
+<RCTSafeAreaView
+  style={
+    Object {
+      "backgroundColor": "#F3F3F3",
+    }
+  }
+>
+  <View
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "margin": 8,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Say Hello
+      </Text>
+    </View>
+  </View>
+  <Text
+    style={
+      Object {
+        "fontFamily": "Arial",
+        "fontSize": 38,
+        "marginTop": 10,
+        "textAlign": "center",
+      }
+    }
+    testID="printed-message"
+  >
+    Hello Tester
+  </Text>
+</RCTSafeAreaView>
+`;
