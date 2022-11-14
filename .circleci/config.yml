@@ -6,9 +6,6 @@ jobs:
       - image: cimg/node:18.10.0
     steps:
       - checkout
-      - run:
-          name: Update NPM
-          command: 'sudo npm install -g npm@5'
       - restore_cache:
           key: dependency-cache-{{ checksum "yarn.lock" }}
       - run:
