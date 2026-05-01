@@ -1,16 +1,17 @@
 version: 2.1
+orbs:
+  node: circleci/node@7.2.1
 jobs:
-  build:
-    working_directory: ~/repo
+  test:
     docker:
-      - image: cimg/node:18.10.0
+      - image: cimg/node:24.0
     steps:
       - checkout
-      - restore_cache:
-          key: dependency-cache-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: npm install
+      - node/install-packages
       - run:
           name: Run tests
-          command: npm run test
+          command: npm test
+workflows:
+  test-on-push:
+    jobs:
+      - test
